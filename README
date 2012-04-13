@@ -1,0 +1,62 @@
+SOURCE CODE TO BE RELEASED UPON PUBLICATION
+(of a journal article describing the first DarwinTunes experiment)
+
+This directory contains the DarwinTunes song-generation source code.
+
+Moderate Linux and Perl knowledge is assumed.  The author takes no
+responsibility for hearing loss.  Please take care of your ears!
+
+Author: Bob MacCallum, http://twitter.com/bobmaccallum
+
+Please note that the DarwinTunes code has only been tested in Linux.
+It seems to run fine on a mid-range 2010 netbook.
+
+In order to run DarwinTunes on your own machine you'll need to
+install the following:
+
+1. Perl modules: PDL and PDL::Audio::Scales
+
+2. PerlGP (http://perlgp.org) - set the PERLGP_SCRATCH
+   environment variable to "." without the quotes.
+
+
+To get started generating music, edit Individual.pm to set the tempo
+(if you are familiar with PerlGP's grammar description syntax you can
+set other things too).
+
+From within this directory:
+
+1. Type "screen nice perlgp-run.pl -loop" and ctrl-a d to detach the
+   screen (or just run it in a spare window without the 'screen').
+
+2. Run this script: ./rate-loops.pl
+   You should hear music (you might need to install pulseaudio, esound
+   or tweak the play-loops.pl script to suit your system).
+
+3. Rate the loops with any integer you like, followed by <enter> (then
+   you get to hear the next loop).  If you follow the number with a
+   period, the loop (and its Perl source) will be saved.
+
+4. Repeat 3 indefinitely...
+
+5. To stop the program:
+   ctrl-c to stop rate-loops.pl
+   screen -r
+   then ctrl-c twice to kill the loop generation in the background
+
+6. To restart the program, just run perlgp-run.pl again.
+
+7. To completely wipe the project in this directory, stop all programs
+   and type perlgp-wipe-expt.pl
+
+
+If you have Perl/PerlGP knowledge, you can add WAV sample files (keep
+them short-ish) in a hierarchical directory structure within 'samples'
+(keep directory names short and use letters and no numbers or
+punctuation).  You can then edit the Grammar.pm file to allow use of
+the loadwav function.  If you name kick, snare and hi-hat samples
+appropriately you can uncomment various bits of code (Individual.pm,
+Grammar.pm, search for 'house') early on in evolution to encourage
+some basic house beats.
+
+Have fun!
