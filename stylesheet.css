@@ -1,0 +1,116 @@
+body {
+  background: #F5F5FB;
+  font-family: helvetica, arial, sans;
+  font-size: 12px;
+}
+
+p.para, div.para {
+  margin-left: 10px;
+  width: 240px;
+}
+p, div {
+  font-size: 12px;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+div#rating_div {
+  float: left;
+  height: 180px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+div#id_div {
+  float: left;
+}
+.clearboth {
+  clear: both;
+}
+
+input {
+  background: white;
+}
+
+input.loopid {
+  width: 50px;
+  font-size: 90%;
+}
+
+input.tiny {
+  font-size: 70%;
+}
+
+input.rating {
+  width: 110px;
+  font-size: 90%;
+}
+
+input.connect {
+  font-size: 90%;
+/*  width: 50px;*/
+}
+
+#site-name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  overflow: hidden;
+  font-size: 22px;
+  margin-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#site-name a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#site-name a:hover {
+  text-decoration: none;
+}
+
+#site-slogan {
+  color: #FFF;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: -5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div#logo {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div#header {
+  background: url("/icons/evo-header.png") no-repeat top left;
+  width: 260px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#footer {
+  margin-left: 10px;
+}
+
+
+a {
+  color: #575dc1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.download {
+  font-size: 9px;
+}
+
+.compactform {
+  margin: 0px;
+  padding: 0px;
+}
