@@ -33,6 +33,9 @@ From within this directory:
    You should hear music (you might need to install pulseaudio, esound
    or tweak the play-loops.pl script to suit your system).
 
+   You can replace the esdcat command with
+   sox -q -t raw -r 44100 -b 16 -c 2 -e signed-integer - -t alsa
+
 3. Rate the loops with any integer you like, followed by <enter> (then
    you get to hear the next loop).  If you follow the number with a
    period, the loop (and its Perl source) will be saved.
